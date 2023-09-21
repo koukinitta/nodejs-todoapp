@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TODOアプリ</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <form class="task-form">
+    <h4>Node.jsを用いたTodoアプリ</h4>
+    <div class="form-controll">
+      <input type="text" name="name" class="task-input" placeholder="例：Node.jsを学ぶ">
+      <button type="submit" class="btn submit-btn">送信</button>
+    </div>
+    <p class="attention">注意</p>
+    <p class="attention">・40文字まで入力可能です。</p>
+    <p class="attention">・空白ではタスクを作成できません。</p>
+    <div class="form-alert"></div>
+  </form>
+
+  <section class="tasks-container">
+    <div class="tasks">
+    </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
